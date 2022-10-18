@@ -1,4 +1,5 @@
 name: dw_drp_base
+description: Activate this theme before starting a new starterkit theme.
 type: theme
 'base theme': stable9
 starterkit: true
