@@ -1,0 +1,22 @@
+name: dw_drp_base
+type: theme
+'base theme': stable9
+starterkit: true
+version: VERSION
+libraries:
+  - dw_drp_base/base
+  - dw_drp_base/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - dw_drp_base/user
+  core/drupal.dropbutton:
+    - dw_drp_base/dropbutton
+  core/drupal.dialog:
+    - dw_drp_base/dialog
+  file/drupal.file:
+    - dw_drp_base/file
+  core/drupal.progress:
+    - dw_drp_base/progress
+core_version_requirement: ^9
+generator: 'starterkit_theme:9.4.8'
