@@ -1,0 +1,20 @@
+{
+    "name": "dataweb1/dw_drp_base",
+    "description": "Drupal starterkit base theme.e.",
+    "type": "drupal-theme",
+    "homepage": "https://github.com/dataweb1/bo",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ],
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Bert Jansen",
+            "email": "bert@data-web.be",
+            "role": "Owner"
+        }
+    ]
+}
