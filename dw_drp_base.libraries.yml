@@ -105,3 +105,18 @@ user:
     component:
       css/components/user.css:
         weight: -10
+
+bootstrap:
+  css:
+    theme:
+      bootstrap/bootstrap.min.css: {}
+      bootstrap/bootstrap-grid.min.css: {}
+      bootstrap/bootstrap-reboot.min.css: {}
+      bootstrap/starterkit_theme_tweaks.css: {}
+
+custom:
+  css:
+    theme:
+      custom/custom.css: {}
+  js:
+    custom/custom.js: {}

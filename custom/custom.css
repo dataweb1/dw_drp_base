@@ -1,0 +1,313 @@
+h1, h2, h3, h4, h5, h6, span, p, a {
+  line-height: 1;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+
+/* User login */
+body.path-user:not(.user-logged-in) {
+  overflow: hidden;
+}
+
+body.path-user:not(.user-logged-in) main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+body.path-user:not(.user-logged-in) main .layout-content {
+  width: 80%;
+  max-width: 500px;
+  background-color: #F8F8F8;
+  padding: 1rem;
+}
+
+@media (min-width: 500px) {
+  body.path-user:not(.user-logged-in) main .layout-content {
+    width: 50%;
+    padding: 2rem;
+  }
+}
+
+body.path-user:not(.user-logged-in) main .layout-content input:not([type='submit']) {
+  width: 100%;
+}
+/* Tabs */
+.tabs a {
+  line-height: 30px;
+}
+
+/* Off Canvas Dialog */
+#drupal-off-canvas {
+  width: 100%!important;
+}
+
+#drupal-off-canvas .form-actions {
+  border-top: 1px solid #C0C0C0;
+  margin: -1.5rem!important;
+  margin-top: 0!important;
+  padding: 1rem 1.5rem!important;
+  background-color: #f3f4f9;
+}
+
+#drupal-off-canvas form {
+  padding: 1.5rem!important;
+  background-color: #fafafa!important;
+}
+
+/* Dialog */
+.ui-dialog .fieldgroup {
+  border-width: 1px;
+}
+
+.ui-dialog > .ui-dialog-content {
+  background-color: #fafafa!important;
+  padding: 0;
+}
+
+#drupal-off-canvas {
+  background-color: #f3f4f9!important;
+  padding: 0;
+}
+
+.ui-dialog-buttonset * {
+  margin-left: .5rem!important;
+}
+
+.ui-dialog .ui-dialog-title {
+  font-size: 1.2rem!important;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+  padding: .8rem 2rem .7rem 1rem!important;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+  margin: 0 .7rem!important;
+}
+
+body:not(.path-admin) .ui-button:not(.ui-dialog-titlebar-close,.media-library-item__remove,.multiple-fields-remove-button) {
+  background-color: #fff;
+  color: #444;
+  border: 2px solid #444!important;
+  border-radius: 3px;
+  font-size: 1rem;
+  transition: none;
+}
+
+body:not(.path-admin) .ui-button:not(.ui-dialog-titlebar-close,.media-library-item__remove,.multiple-fields-remove-button):focus,
+body:not(.path-admin) .ui-button:not(:focus, .ui-dialog-titlebar-close,.media-library-item__remove,.multiple-fields-remove-button) {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+body:not(.path-admin) .ui-button.button--primary,
+body:not(.path-admin) .ui-button:not(.ui-dialog-titlebar-close,.media-library-item__remove,.multiple-fields-remove-button):hover,
+body:not(.path-admin) .ui-button:not(.ui-dialog-titlebar-close,.media-library-item__remove,.multiple-fields-remove-button):active {
+  background-color: #444;
+  color: #FFF;
+}
+body:not(.path-admin) .ui-button.button--primary:active,
+body:not(.path-admin) .ui-button.button--primary:hover,
+body:not(.path-admin) .ui-button:not(.ui-dialog-titlebar-close,.media-library-item__remove,.multiple-fields-remove-button):hover,
+body:not(.path-admin) .ui-button:not(.ui-dialog-titlebar-close,.media-library-item__remove,.multiple-fields-remove-button):active {
+  background-color: #232429;
+  border: 2px solid #232429!important;
+  color: #FFF;
+}
+
+body:not(.path-admin) a.ui-button.button--primary:hover,
+body:not(.path-admin) a.ui-button.button--primary:active {
+  color: #fff;
+}
+
+body:not(.path-admin) .ui-button.action-link--danger,
+body:not(.path-admin) .ui-button.button--danger {
+  color: #dc2323;
+  background-color: #fff;
+  border: 2px solid #dc2323!important;
+}
+
+body:not(.path-admin) .ui-button.action-link--danger:hover,
+body:not(.path-admin) .ui-button.button--danger:hover {
+  color: #fff;
+  background-color: #c61f1f;
+  border: 2px solid #dc2323!important;
+}
+
+body:not(.path-admin) .ui-button.action-link--danger:active,
+body:not(.path-admin) .ui-button.button--danger:active {
+  background-color: #b01c1c;
+  border: 2px solid #dc2323!important;
+}
+
+body:not(.path-admin) a.ui-button.action-link--danger:hover,
+body:not(.path-admin) a.ui-button.action-link--danger:active,
+body:not(.path-admin) a.ui-button.button--danger:hover,
+body:not(.path-admin) a.ui-button.button--danger:active {
+  color: #fff;
+}
+
+body:not(.path-admin) .ui-button:disabled,
+body:not(.path-admin) .ui-button.is-disabled {
+  color: #919297;
+  background-color: #ebebed;
+}
+
+body:not(.path-admin) .ui-button.button--primary:disabled,
+body:not(.path-admin) .ui-button.button--primary.is-disabled {
+  color: #828388;
+  background-color: #d3d4d9;
+}
+
+body:not(.path-admin) .ui-button.is-disabled {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* Multiple field remove button. */
+.ui-button.multiple-fields-remove-button {
+  background-color: transparent!important;
+  border: 1px solid transparent!important;
+}
+
+/* Linkit */
+.editor-link-dialog .ui-dialog-content {
+  min-height: 200px!important;
+}
+
+.linkit-ui-autocomplete {
+  position: relative;
+}
+
+/* Media */
+.image-widget .image-preview img {
+  width: auto;
+}
+
+/* Dialog form */
+.ui-dialog-content .form-item {
+  margin-bottom: 1rem!important;
+}
+
+.ui-dialog-content form > * {
+  margin-bottom: 2rem;
+}
+
+.ui-dialog-content .media-library-selection {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.ui-dialog-content table {
+  width: 100%;
+}
+
+.ui-dialog-content input[type='text'] {
+  background-color: #ffffff;
+  background-clip: border-box;
+  color: #232323;
+  line-height: 1rem !important;
+  height: auto;
+  padding: 0.6rem 1.2rem;
+  border: 1px solid #C0C0C0 !important;
+}
+
+.ui-dialog-content input:not([name='new_filename'])[type='text'] {
+  width: 100%;
+}
+
+.ui-dialog-content select {
+  padding: calc(0.75rem - 1px) calc(1rem - 1px);
+  padding-right: calc(2rem - 1px);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 9'%3e%3cpath fill='none' stroke-width='1.5' d='M1 1l6 6 6-6' stroke='%23545560'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  background-size: 2.75rem 0.5625rem;
+
+  box-sizing: border-box;
+  max-width: 100%;
+  color: #232323;
+  border: 1px solid #C0C0C0!important;
+  border-radius: 0;
+  line-height: 1rem!important;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.ui-dialog-content fieldset {
+  background-color: #FFF;
+  padding: 1rem;
+}
+
+.ui-dialog-content .draggable a.tabledrag-handle {
+  margin-left: 0;
+}
+
+.ui-dialog-content .draggable a.tabledrag-handle .handle {
+  height: 24px;
+  width: 24px;
+}
+
+.ui-dialog-content fieldset .fieldset-legend,
+.ui-dialog-content fieldset legend,
+.ui-dialog-content .form-item label {
+  font-weight: bold;
+}
+
+.ui-dialog-content .form-item label:not(.option) {
+  display: table;
+}
+
+.ui-dialog-content input[type='checkbox']:checked {
+  border-color: #003ecc;
+  background-color: #003ecc;
+  background-image: url("data:image/svg+xml,%3csvg width='16' height='16' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M3.795 7.096l2.387 2.506 6.023-6.327 1.484 1.56-7.507 7.89L2.31 8.656z' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+.ui-dialog-content input[type='checkbox'] {
+  position: relative;
+  top: 0.75rem;
+  float: left;
+  margin-right: .5rem;
+  transform: translateY(-50%);
+}
+
+.ui-dialog-content input[type='checkbox'] {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 1.125rem;
+  height: 1.125rem;
+  vertical-align: text-bottom;
+  border: 1px solid #919297;
+  border-radius: 2px;
+  background: #fff no-repeat 50% 50%;
+  background-size: 100% 100%;
+  box-shadow: 0 0 0 4px transparent;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.ui-dialog-content .vertical-tabs {
+  background-color: #f3f4f9;
+}
+
+.ui-dialog-content .vertical-tabs__menu-item {
+  background-color: #fafafa;
+}
+
+.ui-dialog-content .vertical-tabs__menu-item.is-selected {
+  background-color: #f3f4f9;
+}
+
+.ui-dialog-content details {
+  background-color: #f3f4f9;
+}
+
+  /* Node delete form. */
+.node-page-delete-form h3 {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
