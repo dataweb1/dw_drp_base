@@ -9,15 +9,15 @@
  * @see template_preprocess_maintenance_page()
  */
 #}
-<div class="layout-container">
+<div class="layout-container" style="margin: 0 auto; width: 50%; display: flex; align-items: center; justify-content: center; flex-direction: column; height: 100vh; text-align: center">
 
   <header role="banner">
     {% if logo %}
       <a href="{{ front_page }}" title="{{ 'Home'|t }}" rel="home">
-        <img src="{{ logo }}" alt="{{ 'Home'|t }}"/>
+        <img src="{{ logo }}" alt="{{ 'Home'|t }}" style="margin: 2rem auto; max-width: 500px; width: 80%" />
       </a>
     {% endif %}
-
+      {#
     {% if site_name or site_slogan %}
       <div class="name-and-slogan">
         {% if site_name %}
@@ -29,14 +29,14 @@
         {% if site_slogan %}
           <div class="site-slogan">{{ site_slogan }}</div>
         {% endif %}
-      </div>{# /.name-and-slogan #}
+      </div>
     {% endif %}
-
+      #}
   </header>
 
   <main role="main">
     {% if title %}
-      <h1>{{ title }}</h1>
+      <h1 style="font-size: 2rem; font-weight: bold;">{{ title }}</h1>
     {% endif %}
 
     {{ page.highlighted }}

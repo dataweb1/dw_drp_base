@@ -77,7 +77,10 @@
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
   ]
 %}
+
 {{ attach_library('dw_drp_base/node') }}
+
+{% if content.body.0 %}
 <article{{ attributes.addClass(classes) }}>
 
   {{ title_prefix }}
@@ -103,3 +106,4 @@
   </div>
 
 </article>
+{% endif %}

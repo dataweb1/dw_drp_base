@@ -25,6 +25,7 @@
  * @see template_preprocess_block()
  */
 #}
+
 {%
   set classes = [
     'block',
@@ -32,7 +33,11 @@
     'block-' ~ plugin_id|clean_class,
   ]
 %}
-<div{{ attributes.addClass(classes) }}>
+
+{% if is_empty == false %}
+  {% if logged_in %}
+  <div{{ attributes.addClass(classes) }}>
+  {% endif %}
   {{ title_prefix }}
   {% if label %}
     <h2{{ title_attributes }}>{{ label }}</h2>
@@ -41,4 +46,7 @@
   {% block content %}
     {{ content }}
   {% endblock %}
-</div>
+  {% if logged_in %}
+  </div>
+  {% endif %}
+{% endif %}

@@ -25,4 +25,12 @@
     has_parent ? 'form-wrapper',
   ]
 %}
-<div{{ attributes.addClass(classes) }}>{{ children }}</div>
+{% set attributes = attributes.addClass(classes) %}
+
+{% if attributes != '' %}
+<div{{ attributes }}>
+{% endif %}
+  {{ children }}
+{% if attributes %}
+</div>
+{% endif %}
