@@ -63,7 +63,6 @@ body.path-user:not(.user-logged-in) main .layout-content input:not([type='submit
 
 .ui-dialog > .ui-dialog-content {
   background-color: #fafafa!important;
-  padding: 0;
 }
 
 #drupal-off-canvas {
