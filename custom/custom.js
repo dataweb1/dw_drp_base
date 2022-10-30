@@ -22,6 +22,7 @@
   function addUiButton() {
     $('form .button, .ui-dialog-buttonset .button').each(function() {
       if (!$(this).hasClass('ui-button') &&
+          !$(this).hasClass('no-ui-button') &&
           !$(this).hasClass('media-library-item__remove')) {
         $(this).addClass('ui-button');
       }
