@@ -187,6 +187,7 @@ body:not(.path-admin) .ui-button.is-disabled {
 }
 
 /* Dialog form */
+.ui-dialog-content .form-wrapper,
 .ui-dialog-content .form-item {
   margin-bottom: 1rem!important;
 }
@@ -204,13 +205,13 @@ body:not(.path-admin) .ui-button.is-disabled {
   width: 100%;
 }
 
-.ui-dialog-content input[type='text'] {
+.ui-dialog-content input:not([type='checkbox']) {
   background-color: #ffffff;
   background-clip: border-box;
   color: #232323;
   line-height: 1rem !important;
   height: auto;
-  padding: 0.6rem 1.2rem;
+  padding: 0.6rem .8rem;
   border: 1px solid #C0C0C0 !important;
 }
 
@@ -252,10 +253,12 @@ body:not(.path-admin) .ui-button.is-disabled {
 
 .ui-dialog-content fieldset .fieldset-legend,
 .ui-dialog-content fieldset legend,
+.ui-dialog-content .form-wrapper label,
 .ui-dialog-content .form-item label {
   font-weight: bold;
 }
 
+.ui-dialog-content .form-wrapper label:not(.option),
 .ui-dialog-content .form-item label:not(.option) {
   display: table;
 }
