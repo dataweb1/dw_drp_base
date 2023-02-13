@@ -1,4 +1,5 @@
-(function ($) {
+(function ($, window, Drupal) {
+
   Drupal.dw_drp_base_custom = Drupal.dw_drp_base_custom || {};
 
   Drupal.behaviors.dw_drp_base_custom = {
@@ -29,4 +30,4 @@
     });
   }
 
-})(jQuery);
+})(jQuery, window, Drupal);

@@ -119,3 +119,6 @@ custom:
       custom/custom.css: {}
   js:
     custom/custom.js: {}
+  dependencies:
+    - core/drupal
+    - core/drupalSettings
