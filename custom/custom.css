@@ -4,18 +4,23 @@ h1, h2, h3, h4, h5, h6, span, p, a {
   word-wrap: break-word;
 }
 
+/* Form */
+.form-item label {
+  display: block;
+}
+
 /* User login */
 body.path-user:not(.user-logged-in) {
   overflow: hidden;
 }
-
+/*
 body.path-user:not(.user-logged-in) main {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
-
+*/
 body.path-user:not(.user-logged-in) main .layout-content {
   width: 80%;
   max-width: 500px;
