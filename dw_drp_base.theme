@@ -11,6 +11,8 @@
 function dw_drp_base_preprocess_html(array &$variables) {
   $front_theme_name = \Drupal::config('system.theme')->get('default');
   if (\Drupal::service('theme.manager')->getActiveTheme()->getName() == $front_theme_name) {
+    // Attach the claro styling.
+    $variables['#attached']['library'][] = 'dw_drp_base/claro';
     // Attach the claro dialog.
     $variables['#attached']['library'][] = 'claro/claro.drupal.dialog';
     // Add basic bootstrap CSS.
