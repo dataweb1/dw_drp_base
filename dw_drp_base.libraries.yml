@@ -122,3 +122,8 @@ custom:
   dependencies:
     - core/drupal
     - core/drupalSettings
+
+claro:
+  css:
+    base:
+      claro/css/base/variables.css: {}
